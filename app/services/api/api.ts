@@ -5,14 +5,9 @@
  * See the [Backend API Integration](https://docs.infinite.red/ignite-cli/boilerplate/app/services/#backend-api-integration)
  * documentation for more details.
  */
-import {
-  ApisauceInstance,
-  create,
-} from "apisauce"
+import { ApisauceInstance, create } from "apisauce"
 import Config from "../../config"
-import type {
-  ApiConfig,
-} from "./api.types"
+import type { ApiConfig } from "./api.types"
 
 /**
  * Configuring the apisauce instance.
@@ -40,10 +35,10 @@ export class Api {
       timeout: this.config.timeout,
       headers: {
         Accept: "application/json",
+        Authorization: "Bearer token",
       },
     })
   }
-
 }
 
 // Singleton instance of the API for convenience

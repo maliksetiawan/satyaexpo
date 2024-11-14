@@ -2,6 +2,10 @@ import "@expo/metro-runtime"
 import React from "react"
 import * as SplashScreen from "expo-splash-screen"
 import App from "./app/app"
+import { LogBox } from "react-native"
+
+LogBox.ignoreLogs(["Warning: ..."])
+LogBox.ignoreAllLogs()
 
 SplashScreen.preventAutoHideAsync()
 

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "15130253421",
+    "project_id": "satya2go-mobile-app",
+    "storage_bucket": "satya2go-mobile-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15130253421:android:51a2ab4a9907bbb17ec764",
+        "android_client_info": {
+          "package_name": "com.satya2go"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAH9q2Yat2n8UhPWCrfvAnyYg6mduT9V8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

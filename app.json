@@ -1,17 +1,17 @@
 {
   "name": "satya2go-expo",
-  "displayName": "satya2go-expo",
+  "displayName": "Satya2Go",
   "expo": {
     "name": "satya2go-expo",
     "slug": "satya2go-expo",
     "scheme": "satya2go-expo",
-    "version": "1.0.0",
+    "version": "5.0.3",
     "orientation": "portrait",
     "icon": "./assets/images/app-icon-all.png",
     "splash": {
       "image": "./assets/images/splash-logo-all.png",
       "resizeMode": "contain",
-      "backgroundColor": "#191015"
+      "backgroundColor": "#3871c1"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -23,6 +23,7 @@
     "android": {
       "icon": "./assets/images/app-icon-android-legacy.png",
       "package": "com.satya2go",
+      "versionCode": 53,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/app-icon-android-adaptive-foreground.png",
         "backgroundImage": "./assets/images/app-icon-android-adaptive-background.png"
@@ -30,7 +31,12 @@
       "splash": {
         "image": "./assets/images/splash-logo-android-universal.png",
         "resizeMode": "contain",
-        "backgroundColor": "#191015"
+        "backgroundColor": "#3871c1"
+      },
+      "config": {
+        "googleMaps": {
+          "ApiKey": "AIzaSyDzUyaH0VUuu_gnpuBFNPcAubpgjMbj7h8"
+        }
       }
     },
     "ios": {
@@ -41,7 +47,7 @@
         "image": "./assets/images/splash-logo-ios-mobile.png",
         "tabletImage": "./assets/images/splash-logo-ios-tablet.png",
         "resizeMode": "contain",
-        "backgroundColor": "#191015"
+        "backgroundColor": "#3871c1"
       }
     },
     "web": {
@@ -49,7 +55,7 @@
       "splash": {
         "image": "./assets/images/splash-logo-web.png",
         "resizeMode": "contain",
-        "backgroundColor": "#191015"
+        "backgroundColor": "#3871c1"
       },
       "bundler": "metro"
     },
@@ -66,10 +72,21 @@
           }
         }
       ],
-      "expo-font"
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
     ],
     "experiments": {
       "tsconfigPaths": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "16660fc2-e5e0-4874-ba76-79a4465d1295"
+      }
     }
   },
   "ignite": {
